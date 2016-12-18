@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Jge-RD-014">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bon Jovi. Albums-->
+        <scene sceneID="hbY-GS-qkv">
+            <objects>
+                <tableViewController id="DuK-AD-ywp" customClass="BSSListTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="8XK-gg-tPs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AlbumCell" id="K7k-Co-Btv" customClass="BSSAlbumTableViewCell">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="K7k-Co-Btv" id="d02-Sa-BdQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KSy-ze-GgM">
+                                            <rect key="frame" x="8" y="2" width="40" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="40" id="RmY-Km-1ae"/>
+                                                <constraint firstAttribute="width" secondItem="KSy-ze-GgM" secondAttribute="height" multiplier="1:1" id="WO8-y0-691"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bkw-Zb-B8A">
+                                            <rect key="frame" x="56" y="11" width="303" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="bkw-Zb-B8A" secondAttribute="trailing" constant="8" id="D3a-cT-Cj2"/>
+                                        <constraint firstItem="KSy-ze-GgM" firstAttribute="centerY" secondItem="d02-Sa-BdQ" secondAttribute="centerY" id="Ift-Oq-f04"/>
+                                        <constraint firstItem="bkw-Zb-B8A" firstAttribute="centerY" secondItem="KSy-ze-GgM" secondAttribute="centerY" id="UQ4-qo-dj3"/>
+                                        <constraint firstItem="KSy-ze-GgM" firstAttribute="leading" secondItem="d02-Sa-BdQ" secondAttribute="leading" constant="8" id="Z4A-sB-CsV"/>
+                                        <constraint firstItem="bkw-Zb-B8A" firstAttribute="leading" secondItem="KSy-ze-GgM" secondAttribute="trailing" constant="8" id="bZ7-UD-ABe"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="artworkImageView" destination="KSy-ze-GgM" id="ELP-Oy-bdh"/>
+                                    <outlet property="nameLabel" destination="bkw-Zb-B8A" id="TUO-pX-Rcj"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="DuK-AD-ywp" id="iFK-8t-GYV"/>
+                            <outlet property="delegate" destination="DuK-AD-ywp" id="ayV-sg-9Ks"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Bon Jovi. Albums" id="FEp-r9-GQd"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dRc-9Q-KRf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="775.20000000000005" y="135.38230884557723"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pb1-Xh-y4u">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jge-RD-014" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hCY-7Q-BCA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DuK-AD-ywp" kind="relationship" relationship="rootViewController" id="mih-OG-Lfa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fGl-6a-Q2C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-164" y="135.38230884557723"/>
+        </scene>
+    </scenes>
+</document>

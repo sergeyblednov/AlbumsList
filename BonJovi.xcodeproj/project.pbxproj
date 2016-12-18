@@ -1,0 +1,358 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B66D76B1E0749F800BEF007 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B66D76A1E0749F800BEF007 /* main.m */; };
+		7B66D76E1E0749F800BEF007 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B66D76D1E0749F800BEF007 /* AppDelegate.m */; };
+		7B66D7741E0749F800BEF007 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B66D7721E0749F800BEF007 /* Main.storyboard */; };
+		7B66D7761E0749F800BEF007 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B66D7751E0749F800BEF007 /* Assets.xcassets */; };
+		7B66D7791E0749F800BEF007 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B66D7771E0749F800BEF007 /* LaunchScreen.storyboard */; };
+		7B66D7841E074AD300BEF007 /* BSSListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B66D7831E074AD300BEF007 /* BSSListTableViewController.m */; };
+		7B66D78F1E074B5000BEF007 /* BSSAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B66D78E1E074B5000BEF007 /* BSSAlbum.m */; };
+		7B66D7921E074C0400BEF007 /* BSSAlbumTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B66D7911E074C0400BEF007 /* BSSAlbumTableViewCell.m */; };
+		7B66D7951E074D7000BEF007 /* BSSDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B66D7941E074D7000BEF007 /* BSSDataSource.m */; };
+		7B66D7971E074E5100BEF007 /* albums.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7B66D7961E074E5100BEF007 /* albums.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7B66D7661E0749F800BEF007 /* BonJovi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BonJovi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B66D76A1E0749F800BEF007 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7B66D76C1E0749F800BEF007 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7B66D76D1E0749F800BEF007 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7B66D7731E0749F800BEF007 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7B66D7751E0749F800BEF007 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7B66D7781E0749F800BEF007 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7B66D77A1E0749F800BEF007 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B66D7821E074AD300BEF007 /* BSSListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BSSListTableViewController.h; path = ViewControllers/BSSListTableViewController.h; sourceTree = "<group>"; };
+		7B66D7831E074AD300BEF007 /* BSSListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BSSListTableViewController.m; path = ViewControllers/BSSListTableViewController.m; sourceTree = "<group>"; };
+		7B66D78D1E074B5000BEF007 /* BSSAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSSAlbum.h; sourceTree = "<group>"; };
+		7B66D78E1E074B5000BEF007 /* BSSAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSSAlbum.m; sourceTree = "<group>"; };
+		7B66D7901E074C0400BEF007 /* BSSAlbumTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BSSAlbumTableViewCell.h; path = ViewControllers/BSSAlbumTableViewCell.h; sourceTree = "<group>"; };
+		7B66D7911E074C0400BEF007 /* BSSAlbumTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BSSAlbumTableViewCell.m; path = ViewControllers/BSSAlbumTableViewCell.m; sourceTree = "<group>"; };
+		7B66D7931E074D7000BEF007 /* BSSDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSSDataSource.h; sourceTree = "<group>"; };
+		7B66D7941E074D7000BEF007 /* BSSDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSSDataSource.m; sourceTree = "<group>"; };
+		7B66D7961E074E5100BEF007 /* albums.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = albums.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7B66D7631E0749F800BEF007 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B66D75D1E0749F800BEF007 = {
+			isa = PBXGroup;
+			children = (
+				7B66D7681E0749F800BEF007 /* BonJovi */,
+				7B66D7671E0749F800BEF007 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7B66D7671E0749F800BEF007 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B66D7661E0749F800BEF007 /* BonJovi.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7B66D7681E0749F800BEF007 /* BonJovi */ = {
+			isa = PBXGroup;
+			children = (
+				7B66D76C1E0749F800BEF007 /* AppDelegate.h */,
+				7B66D76D1E0749F800BEF007 /* AppDelegate.m */,
+				7B66D78C1E074B3500BEF007 /* Models */,
+				7B66D7851E074ADD00BEF007 /* ViewControllers */,
+				7B66D7721E0749F800BEF007 /* Main.storyboard */,
+				7B66D7751E0749F800BEF007 /* Assets.xcassets */,
+				7B66D7771E0749F800BEF007 /* LaunchScreen.storyboard */,
+				7B66D77A1E0749F800BEF007 /* Info.plist */,
+				7B66D7691E0749F800BEF007 /* Supporting Files */,
+			);
+			path = BonJovi;
+			sourceTree = "<group>";
+		};
+		7B66D7691E0749F800BEF007 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7B66D76A1E0749F800BEF007 /* main.m */,
+				7B66D7961E074E5100BEF007 /* albums.txt */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7B66D7851E074ADD00BEF007 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7B66D7821E074AD300BEF007 /* BSSListTableViewController.h */,
+				7B66D7831E074AD300BEF007 /* BSSListTableViewController.m */,
+				7B66D7901E074C0400BEF007 /* BSSAlbumTableViewCell.h */,
+				7B66D7911E074C0400BEF007 /* BSSAlbumTableViewCell.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7B66D78C1E074B3500BEF007 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7B66D78D1E074B5000BEF007 /* BSSAlbum.h */,
+				7B66D78E1E074B5000BEF007 /* BSSAlbum.m */,
+				7B66D7931E074D7000BEF007 /* BSSDataSource.h */,
+				7B66D7941E074D7000BEF007 /* BSSDataSource.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7B66D7651E0749F800BEF007 /* BonJovi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B66D77D1E0749F800BEF007 /* Build configuration list for PBXNativeTarget "BonJovi" */;
+			buildPhases = (
+				7B66D7621E0749F800BEF007 /* Sources */,
+				7B66D7631E0749F800BEF007 /* Frameworks */,
+				7B66D7641E0749F800BEF007 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BonJovi;
+			productName = BonJovi;
+			productReference = 7B66D7661E0749F800BEF007 /* BonJovi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7B66D75E1E0749F800BEF007 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BSS;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Sergiy Blednov";
+				TargetAttributes = {
+					7B66D7651E0749F800BEF007 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 6A4S5B67N6;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 7B66D7611E0749F800BEF007 /* Build configuration list for PBXProject "BonJovi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7B66D75D1E0749F800BEF007;
+			productRefGroup = 7B66D7671E0749F800BEF007 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7B66D7651E0749F800BEF007 /* BonJovi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7B66D7641E0749F800BEF007 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B66D7971E074E5100BEF007 /* albums.txt in Resources */,
+				7B66D7791E0749F800BEF007 /* LaunchScreen.storyboard in Resources */,
+				7B66D7761E0749F800BEF007 /* Assets.xcassets in Resources */,
+				7B66D7741E0749F800BEF007 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7B66D7621E0749F800BEF007 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B66D7921E074C0400BEF007 /* BSSAlbumTableViewCell.m in Sources */,
+				7B66D7951E074D7000BEF007 /* BSSDataSource.m in Sources */,
+				7B66D76E1E0749F800BEF007 /* AppDelegate.m in Sources */,
+				7B66D76B1E0749F800BEF007 /* main.m in Sources */,
+				7B66D78F1E074B5000BEF007 /* BSSAlbum.m in Sources */,
+				7B66D7841E074AD300BEF007 /* BSSListTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7B66D7721E0749F800BEF007 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B66D7731E0749F800BEF007 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7B66D7771E0749F800BEF007 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B66D7781E0749F800BEF007 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7B66D77B1E0749F800BEF007 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7B66D77C1E0749F800BEF007 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7B66D77E1E0749F800BEF007 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6A4S5B67N6;
+				INFOPLIST_FILE = BonJovi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sergeyblednov.BonJovi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7B66D77F1E0749F800BEF007 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6A4S5B67N6;
+				INFOPLIST_FILE = BonJovi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sergeyblednov.BonJovi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7B66D7611E0749F800BEF007 /* Build configuration list for PBXProject "BonJovi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B66D77B1E0749F800BEF007 /* Debug */,
+				7B66D77C1E0749F800BEF007 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B66D77D1E0749F800BEF007 /* Build configuration list for PBXNativeTarget "BonJovi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B66D77E1E0749F800BEF007 /* Debug */,
+				7B66D77F1E0749F800BEF007 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7B66D75E1E0749F800BEF007 /* Project object */;
+}
