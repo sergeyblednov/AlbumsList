@@ -17,9 +17,13 @@
 		7B66D7921E074C0400BEF007 /* BSSAlbumTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B66D7911E074C0400BEF007 /* BSSAlbumTableViewCell.m */; };
 		7B66D7951E074D7000BEF007 /* BSSDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B66D7941E074D7000BEF007 /* BSSDataSource.m */; };
 		7B66D7971E074E5100BEF007 /* albums.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7B66D7961E074E5100BEF007 /* albums.txt */; };
+		7B66D79A1E0759CA00BEF007 /* BSSAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B66D7991E0759CA00BEF007 /* BSSAlbumViewController.m */; };
+		8A29054B04B07F04DA5609DA /* libPods-BonJovi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFAB0B5B3DC2462B392CF7B5 /* libPods-BonJovi.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D9B00D1561A758E5F0C547F /* Pods-BonJovi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BonJovi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BonJovi/Pods-BonJovi.debug.xcconfig"; sourceTree = "<group>"; };
+		30858A2B4B46167869B04B7F /* Pods-BonJovi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BonJovi.release.xcconfig"; path = "Pods/Target Support Files/Pods-BonJovi/Pods-BonJovi.release.xcconfig"; sourceTree = "<group>"; };
 		7B66D7661E0749F800BEF007 /* BonJovi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BonJovi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B66D76A1E0749F800BEF007 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7B66D76C1E0749F800BEF007 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -37,6 +41,9 @@
 		7B66D7931E074D7000BEF007 /* BSSDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSSDataSource.h; sourceTree = "<group>"; };
 		7B66D7941E074D7000BEF007 /* BSSDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSSDataSource.m; sourceTree = "<group>"; };
 		7B66D7961E074E5100BEF007 /* albums.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = albums.txt; sourceTree = "<group>"; };
+		7B66D7981E0759CA00BEF007 /* BSSAlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BSSAlbumViewController.h; path = ViewControllers/BSSAlbumViewController.h; sourceTree = "<group>"; };
+		7B66D7991E0759CA00BEF007 /* BSSAlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BSSAlbumViewController.m; path = ViewControllers/BSSAlbumViewController.m; sourceTree = "<group>"; };
+		DFAB0B5B3DC2462B392CF7B5 /* libPods-BonJovi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BonJovi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A29054B04B07F04DA5609DA /* libPods-BonJovi.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +63,8 @@
 			children = (
 				7B66D7681E0749F800BEF007 /* BonJovi */,
 				7B66D7671E0749F800BEF007 /* Products */,
+				A856ADCF0767F665814FB6FE /* Pods */,
+				E50E532AEBC13B1C29DCBBE5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +108,8 @@
 				7B66D7831E074AD300BEF007 /* BSSListTableViewController.m */,
 				7B66D7901E074C0400BEF007 /* BSSAlbumTableViewCell.h */,
 				7B66D7911E074C0400BEF007 /* BSSAlbumTableViewCell.m */,
+				7B66D7981E0759CA00BEF007 /* BSSAlbumViewController.h */,
+				7B66D7991E0759CA00BEF007 /* BSSAlbumViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -113,6 +125,23 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		A856ADCF0767F665814FB6FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0D9B00D1561A758E5F0C547F /* Pods-BonJovi.debug.xcconfig */,
+				30858A2B4B46167869B04B7F /* Pods-BonJovi.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E50E532AEBC13B1C29DCBBE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DFAB0B5B3DC2462B392CF7B5 /* libPods-BonJovi.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -120,9 +149,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B66D77D1E0749F800BEF007 /* Build configuration list for PBXNativeTarget "BonJovi" */;
 			buildPhases = (
+				A6642876FB15451C45DDAB89 /* [CP] Check Pods Manifest.lock */,
 				7B66D7621E0749F800BEF007 /* Sources */,
 				7B66D7631E0749F800BEF007 /* Frameworks */,
 				7B66D7641E0749F800BEF007 /* Resources */,
+				D189D4C7B8F532D58812881A /* [CP] Embed Pods Frameworks */,
+				D64169131B3B90E3A58B7878 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,6 +214,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A6642876FB15451C45DDAB89 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D189D4C7B8F532D58812881A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BonJovi/Pods-BonJovi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D64169131B3B90E3A58B7878 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BonJovi/Pods-BonJovi-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7B66D7621E0749F800BEF007 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -192,6 +272,7 @@
 				7B66D76E1E0749F800BEF007 /* AppDelegate.m in Sources */,
 				7B66D76B1E0749F800BEF007 /* main.m in Sources */,
 				7B66D78F1E074B5000BEF007 /* BSSAlbum.m in Sources */,
+				7B66D79A1E0759CA00BEF007 /* BSSAlbumViewController.m in Sources */,
 				7B66D7841E074AD300BEF007 /* BSSListTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,6 +389,7 @@
 		};
 		7B66D77E1E0749F800BEF007 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D9B00D1561A758E5F0C547F /* Pods-BonJovi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6A4S5B67N6;
@@ -321,6 +403,7 @@
 		};
 		7B66D77F1E0749F800BEF007 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30858A2B4B46167869B04B7F /* Pods-BonJovi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6A4S5B67N6;
@@ -351,6 +434,7 @@
 				7B66D77F1E0749F800BEF007 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
