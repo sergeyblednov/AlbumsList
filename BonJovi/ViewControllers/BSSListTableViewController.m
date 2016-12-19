@@ -18,6 +18,7 @@
 
 @property (nonatomic) BSSDataSource *dataSource;
 @property (nonatomic) UISearchController *searchController;
+@property (assign, nonatomic, getter = isAscending) BOOL ascending;
 
 @end
 
@@ -36,6 +37,8 @@
     self.searchController.searchBar.delegate = self;
     self.tableView.tableHeaderView = self.searchController.searchBar;
     self.definesPresentationContext = YES;
+    
+    self.ascending = NO;
 }
 
 - (void)searchForText:(NSString *)search
@@ -45,6 +48,19 @@
     } else {
         self.filteredAlbums = self.albums;
     }
+}
+
+#pragma mark - Action
+
+- (IBAction)sortAlbumsByName
+{
+    self.ascending = !self.ascending;
+    int sign = self.isAscending ? 1 : -1;
+    self.albums = [self.albums sortedArrayUsingComparator:^NSComparisonResult(BSSAlbum *  _Nonnull obj1, BSSAlbum * _Nonnull obj2) {
+        return sign * [obj1.name compare:obj2.name];
+    }];
+    self.filteredAlbums = self.albums;
+    [self.tableView reloadData];
 }
 
 #pragma mark - Table view data source
