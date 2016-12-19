@@ -11,10 +11,13 @@
 #import "BSSDataSource.h"
 #import "BSSAlbumViewController.h"
 
-@interface BSSListTableViewController ()
+@interface BSSListTableViewController () <UISearchResultsUpdating, UISearchBarDelegate>
 
 @property (nonatomic) NSArray *albums;
+@property (nonatomic) NSArray *filteredAlbums;
+
 @property (nonatomic) BSSDataSource *dataSource;
+@property (nonatomic) UISearchController *searchController;
 
 @end
 
@@ -25,6 +28,23 @@
     [super viewDidLoad];
     self.dataSource = [[BSSDataSource alloc] init];
     self.albums = [self.dataSource getAlbums];
+    self.filteredAlbums = self.albums;
+    
+    self.searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
+    self.searchController.searchResultsUpdater = self;
+    self.searchController.dimsBackgroundDuringPresentation = NO;    
+    self.searchController.searchBar.delegate = self;
+    self.tableView.tableHeaderView = self.searchController.searchBar;
+    self.definesPresentationContext = YES;
+}
+
+- (void)searchForText:(NSString *)search
+{
+    if (search.length) {
+        self.filteredAlbums = [self.albums filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"SELF.name contains[cd] %@", search]];
+    } else {
+        self.filteredAlbums = self.albums;
+    }
 }
 
 #pragma mark - Table view data source
@@ -32,17 +52,25 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.albums.count;
+    return self.filteredAlbums.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     BSSAlbumTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AlbumCell" forIndexPath:indexPath];
-    cell.album = self.albums[indexPath.row];
+    cell.album = self.filteredAlbums[indexPath.row];
     
     return cell;
 }
 
+#pragma mark - Search Result Updating
+
+- (void)updateSearchResultsForSearchController:(UISearchController *)searchController
+{
+    NSString *searchString = searchController.searchBar.text;
+    [self searchForText:searchString];
+    [self.tableView reloadData];
+}
 
 #pragma mark - Navigation
 
@@ -51,7 +79,12 @@
     if ([segue.identifier isEqualToString:@"AlbumDetails"]) {
         if ([sender isKindOfClass:[UITableViewCell class]]) {
             NSIndexPath *indexPath = [self.tableView indexPathForCell:(UITableViewCell *)sender];
-            BSSAlbum *album = self.albums[indexPath.row];
+            BSSAlbum *album;
+            if (self.searchController.isActive) {
+                album = self.filteredAlbums[indexPath.row];
+            } else {
+                album = self.albums[indexPath.row];
+            }
             ((BSSAlbumViewController *)segue.destinationViewController).album = album;
         }
     }

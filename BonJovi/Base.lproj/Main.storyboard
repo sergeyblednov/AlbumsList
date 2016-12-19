@@ -62,8 +62,19 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Bon Jovi. Albums" id="FEp-r9-GQd"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="PgN-Dh-IVt" id="cRC-WM-KVS"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dRc-9Q-KRf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="PgN-Dh-IVt">
+                    <connections>
+                        <outlet property="delegate" destination="DuK-AD-ywp" id="TQj-AI-U3B"/>
+                        <outlet property="searchContentsController" destination="DuK-AD-ywp" id="zd1-HZ-pOW"/>
+                        <outlet property="searchResultsDataSource" destination="DuK-AD-ywp" id="ppm-C2-SXY"/>
+                        <outlet property="searchResultsDelegate" destination="DuK-AD-ywp" id="y4e-GC-fmM"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="775.20000000000005" y="135.38230884557723"/>
         </scene>
